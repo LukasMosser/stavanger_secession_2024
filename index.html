@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        if (window.innerWidth <= 800 || navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i)) {
+        window.location.href = "index_mobile.html";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            var cssFile;
+            if (window.innerWidth <= 800 || navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i)) {
+                cssFile = 'style_mobile.css'; // Path to your mobile CSS file
+            } else {
+                cssFile = 'style.css'; // Path to your desktop CSS file
+            }
+            
+            var link = document.createElement("link");
+            link.href = cssFile;
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            document.getElementsByTagName("head")[0].appendChild(link);
+        });
+    </script>
+    <title>Centered Box Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="centered-box">
+        <div class="box-one">
+            <div class="box-one-left">
+                Stavanger Secession<br> 
+                June 22-25
+            </div>
+            <div class="box-one-right">
+                <a href="https://www.stavanger-secession.no" >2024</a> <a href="https://www.stavanger-secession.no" >2023</a><br> 
+                <div id="stavangerTime"></div>  <div id="temperature"></div>
+            </div>
+            <div class="vector-graphic-container">
+                <img src="images/Vector.png" alt="Stavanger Secession">
+            </div>
+        </div>
+        <div class="box-two">
+            <div class="box-left">
+                <div class="box-left-top">
+                    <p class="heading">About</p>
+                    <hr> <!-- Horizontal divider -->
+                    <p> </p> <!-- Empty line -->
+                    <p> </p>
+                    <p>Stavanger Secession is an international art summit happening annually in Stavanger
+                        combining discussion, projection, concert,
+                        performance and art installations.</p>
+                        
+                    <p>It is modelled as an  expedition bringing together artists,
+                        thinkers, musicians, filmmakers, architects,
+                        activists and scientists. It is short and reunites only a handful of participants from various
+                        geographies. </p>
+                        
+                    <p>Stavanger Secession is an international art summit happening annually in Stavanger
+                        combining discussion, projection, concert,
+                        performance and art installations. It is modelled as an  expedition bringing together artists,
+                        thinkers, musicians, filmmakers, architects,
+                        activists and scientists. It is short and reunites only a handful of participants from various
+                        geographies. Like in Stalker by Andrei Tarkovsky or the Mount Analogue by René Daumal, it is an expedition whose final goal is lost on the way.
+                        It’s “raison d’être” is its own existence which leads to various speculations, collision of ideas and the injection of fear and laughter in the
+                        exhausted routines of modern lives.</p>
+                </div>
+                <div class="box-left-bottom">
+                    <p class="heading">Contact</p>
+                    <hr> <!-- Horizontal divider -->
+                    <a href="mailto:info@stavangersecession.com" >Email</a> <a href="https://www.instagram.com/stavanger.secession" >Instagram</a>
+                </div>
+            </div>
+            <div class="box-right">
+                <div class="box-right-top">
+                    <p class="heading">Events</p>
+                    <hr> <!-- Horizontal divider -->
+                    <div class="event-row">
+                        <span class="event-title">Event title</span>
+                        <span class="institution-name">Name of Institution</span>
+                        <span class="event-date">Date time</span>
+                    </div>
+                    <div class="event-row">
+                        <span class="event-title">Event title</span>
+                        <span class="institution-name">Name of Institution</span>
+                        <span class="event-date">Date time</span>
+                    </div>
+                    <div class="event-row">
+                        <span class="event-title">Event title</span>
+                        <span class="institution-name">Name of Institution</span>
+                        <span class="event-date">Date time</span>
+                    </div>
+                    <div class="event-row">
+                        <span class="event-title">Event title</span>
+                        <span class="institution-name">Name of Institution</span>
+                        <span class="event-date">Date time</span>
+                    </div>
+                    <div class="event-row">
+                        <span class="event-title">Event title</span>
+                        <span class="institution-name">Name of Institution</span>
+                        <span class="event-date">Date time</span>
+                    </div>
+                    <div class="event-row">
+                        <span class="event-title">Event title</span>
+                        <span class="institution-name">Name of Institution</span>
+                        <span class="event-date">Date time</span>
+                    </div>
+                </div>
+                <div class="box-right-bottom">
+                    <p class="heading">Partners</p>
+                    <hr> <!-- Horizontal divider -->
+                    <div class="logo-placeholder"><img src="KR_Arts Council_Norway.png" alt="Kulturradet"></div>
+                    <div class="logo-placeholder"></div>
+                    <div class="logo-placeholder"></div>
+                    <div class="logo-placeholder"></div>
+                    <div class="logo-placeholder"></div>
+                    <div class="logo-placeholder"></div>
+                </div>
+            </div>
+        </div>
+<script src="time.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A3A69B;
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: black; /* Ensures hyperlink color is black */
+    text-decoration: underline; /* Ensures hyperlinks are underlined */
+    font-family: 'Roboto', Arial, sans-serif; /* Ensures font consistency with the rest of the text */
+}
+
+/* Styles for the horizontal divider */
+hr {
+    width: 100%; /* Ensures the divider spans the entire width of its container */
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin-top: 12px; /* Light grey color for visibility */
+    margin-bottom: 48px;
+}
+
+
+.centered-box {
+    width: 1440px;
+    height: 1950px;
+    background-color: #A3A69B;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 21px; /* Ensures top padding */
+    /* Prevents the flex items from shrinking smaller than their content */
+    overflow: auto; /* Adds scroll to the centered-box if content exceeds viewport height */
+}
+
+
+.box-one, .box-two {
+    width: 1387px; /* Explicit width */
+    margin: 0 auto; /* Center within centered-box */
+}
+
+.box-one {
+    height: 530px;
+    background-color: #A3A69B;
+    margin-bottom: 150px; /* Ensures fixed spacing below box-one */
+    width: 1387px; /* Explicit width */
+    margin-left: auto; /* Center within centered-box */
+    margin-right: auto; /* Center within centered-box */
+    display: flex; /* Enables flexbox layout within box-one */
+    justify-content: space-between; /* Spaces out the child elements to the far edges */
+    align-items: flex-start; /* Aligns items to the top */
+    height: 530px; /* Ensures box-one has a fixed height */
+    position: relative; /* Sets a stacking context for absolute positioning of children */
+}
+
+.box-one-left, .box-one-right {
+    position: absolute; /* Positions both boxes absolutely within box-one */
+    top: 0; /* Aligns the top edge with box-one's top edge */
+    height: 131px; /* Height for both boxes */
+    width: 533px; /* Width for both boxes */
+}
+
+.box-one-left {
+    left: 0; /* Aligns box-one-left with the left edge of box-one */
+    background-color: #A3A69B; /* Different color for visibility */
+}
+
+.box-one-right {
+    text-align: right;
+    right: 0; /* Aligns box-one-right with the right edge of box-one */
+    background-color: #A3A69B; /* Different color for visibility */
+}
+
+.vector-graphic-container {
+    width: 100%; /* Adjust if you have a specific width in mind for the container */
+    display: flex; /* Utilizes flexbox to center the image */
+    justify-content: center; /* Centers the child horizontally */
+    align-items: center; /* Centers the child vertically, if needed */
+    margin-top: 220px; /* Creates space between this container and the top boxes */
+    /* Optional: specify a height if you want to control the container's height */
+}
+
+.vector-graphic-container img {
+    /* Adjustments for the image, if necessary */
+    max-width: 100%; /* Ensures the image is responsive and fits its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+}
+
+.box-two {
+    display: flex; /* Ensures a flexbox layout */
+    justify-content: space-between; /* Aligns children with space between them */
+    align-items: stretch; /* Stretches children to fill the container height */
+    width: 1387px; /* Fixed width of the container */
+    background-color: #A3A69B; /* Background color for visibility */
+    margin-left: auto; /* Centers box-two horizontally */
+    margin-right: auto; /* Centers box-two horizontally */
+    flex-grow: 1; /* Allows box-two to grow and fill available vertical space */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+
+.box-left, .box-right {
+    display: block; /* Changed from inline-block to block for strict width control */
+    height: 100%; /* Full height of container */
+}
+
+.box-left {
+    width: 486px; /* Fixed width for the left box */
+    background-color: #A3A69B; /* Color for visibility */
+    margin-right: 25px; /* Adds space between box-left and box-right */
+}
+
+.heading {
+    margin-top: 0;
+    margin-bottom: 0; /* Adjust as needed for space below the heading */
+    line-height: 18px; /* Specific line height for heading text */
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+.box-right {
+    flex-grow: 1; /* Allows box-right to fill the remaining space */
+    background-color: #A3A69B; /* Color for visibility */
+    /* flex-grow will adjust its size dynamically, filling the available space minus the margin */
+}
+
+.box-left-top {
+    height: 808px; /* Fixed height for the top box */
+    /* Ensure content does not overflow */
+    overflow: auto;
+}
+
+.box-right-top {
+    background-color: #A3A69B;
+    height: 565px; /* Fixed height for the top box */
+    /* Ensure content does not overflow */
+    overflow: auto;
+}
+
+.box-right-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.event-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Vertical spacing between rows */
+}
+
+.event-title {
+    margin-right: 150px; /* Space between event title and name of institution */
+}
+
+.institution-name {
+    flex-grow: 1; /* Allows this element to take up any remaining space, pushing the date/time to the right */
+}
+
+.event-date {
+    /* This will be right-aligned due to the flex-grow on the institution-name */
+}
+
+#temperature, #stavangerTime {
+    display: inline-block; /* Makes the divs inline-block so they sit on the same line */
+    margin-right: 0px; /* Optional: adds some space between the temperature and time divs */
+}
+
+.box-left-bottom, .box-right-bottom {
+    flex-grow: 1; /* Allows bottom box to fill the remaining space */
+    /* Adjusts for any spacing or padding as necessary */
+}
+
+.box-right-bottom {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line as needed */
+}
+
+.logo-placeholder {
+    max-width: 413px; /* Maximum width for each logo */
+    max-height: 109px; /* Maximum height for each logo */
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: auto; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+}
+
+.logo-placeholder img {
+    width: 100%; /* Makes the image fully occupy the width */
+    height: 100%; /* Makes the image fully occupy the height */
+    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+
+/* Ensure that box-right-bottom accommodates two columns explicitly */
+.box-right-bottom {
+    background-color: #A3A69B;
+    /* Assuming box-right has a fixed width, no additional width setting is needed here */
+    padding-right: 0; /* Aligns with the right edge of box-right */
+    padding-left: 0; /* Aligns with the left edge of box-right */
+}
+
+
+/* Clear floats, if necessary */
+.box-two::after {
+    content: "";
+    display: table;
+    clear: both;
+}
