@@ -59,7 +59,7 @@ hr {
     display: flex; /* Enables flexbox layout within box-one */
     justify-content: space-between; /* Spaces out the child elements to the far edges */
     align-items: flex-start; /* Aligns items to the top */
-    height: 530px; /* Ensures box-one has a fixed height */
+    height: 600px; /* Ensures box-one has a fixed height */
     position: relative; /* Sets a stacking context for absolute positioning of children */
 }
 
@@ -67,12 +67,21 @@ hr {
     position: absolute; /* Positions both boxes absolutely within box-one */
     top: 0; /* Aligns the top edge with box-one's top edge */
     height: 131px; /* Height for both boxes */
-    width: 533px; /* Width for both boxes */
+    width: 700px; /* Width for both boxes */
 }
 
 .box-one-left {
+    margin-top: 25px;
     left: 0; /* Aligns box-one-left with the left edge of box-one */
     background-color: #A3A69B; /* Different color for visibility */
+}
+
+.box-one-left h1 {
+    margin-top: 0; /* Adjusts the margin for the heading */
+    margin-bottom: 0; /* Adjusts the margin for the heading */
+    line-height: 0.5; /* Specific line height for heading text */
+    font-size: 50px; /* Adjust font size as needed */
+    font-weight: 400;
 }
 
 .box-one-right {
@@ -86,7 +95,8 @@ hr {
     display: flex; /* Utilizes flexbox to center the image */
     justify-content: center; /* Centers the child horizontally */
     align-items: center; /* Centers the child vertically, if needed */
-    margin-top: 220px; /* Creates space between this container and the top boxes */
+    margin-top: 300px; /* Creates space between this container and the top boxes */
+    margin-bottom: 300px;
     /* Optional: specify a height if you want to control the container's height */
 }
 
@@ -115,7 +125,7 @@ hr {
 }
 
 .box-left {
-    width: 486px; /* Fixed width for the left box */
+    width: 600px; /* Fixed width for the left box */
     background-color: #A3A69B; /* Color for visibility */
     margin-right: 25px; /* Adds space between box-left and box-right */
 }

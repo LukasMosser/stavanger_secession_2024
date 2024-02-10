@@ -92,11 +92,13 @@ hr {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .vector-graphic-container img {
-    max-width: 100%; /* Ensures the image is responsive and fits its container */
+    width: 100%; /* Ensures the image is responsive and fits its container */
     height: auto; /* Maintains the aspect ratio of the image */
+    display: block;
 }
 
 .box-content {
@@ -178,4 +180,9 @@ hr {
     display: block; /* Remove extra space beneath the image */
     /* You can add a max-width if you don't want it to scale beyond a certain point */
     padding-bottom: 12px;
+}
+
+.box-top-text h1 {
+    font-weight: 400;
+    font-size: 24px;
 }
