@@ -54,6 +54,7 @@ hr {
 }
 
 .box-top-text hr {
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -89,8 +90,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .vector-graphic-container img {
@@ -118,8 +119,6 @@ hr {
 }
 
 .logo-placeholder {
-    max-width: 413px; /* Maximum width for each logo */
-    max-height: 109px; /* Maximum height for each logo */
     width: 100%; /* Ensures the placeholder takes up the correct width within the container */
     height: auto; /* Keeps aspect ratio of the content */
     background-color: transparent; /* Placeholder color, change as needed */
@@ -171,4 +170,12 @@ hr {
 
 .event-row span {
     line-height: 18px; /* Adjust this value to your preferred line height */
+}
+
+.responsive-text img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space beneath the image */
+    /* You can add a max-width if you don't want it to scale beyond a certain point */
+    padding-bottom: 12px;
 }
