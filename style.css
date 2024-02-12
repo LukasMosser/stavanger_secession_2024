@@ -71,16 +71,27 @@ hr {
 }
 
 .box-one-left {
-    margin-top: 25px;
+    margin-top: 15px;
     left: 0; /* Aligns box-one-left with the left edge of box-one */
     background-color: #A3A69B; /* Different color for visibility */
+    width: 500px;
+}
+
+.box-one-left-tophr hr {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.box-one-left-bothr hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .box-one-left h1 {
     margin-top: 0; /* Adjusts the margin for the heading */
     margin-bottom: 0; /* Adjusts the margin for the heading */
     line-height: 0.5; /* Specific line height for heading text */
-    font-size: 50px; /* Adjust font size as needed */
+    font-size: 28px; /* Adjust font size as needed */
     font-weight: 400;
 }
 
@@ -228,4 +239,11 @@ hr {
     content: "";
     display: table;
     clear: both;
+}
+
+.responsive-text img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space beneath the image */
+    /* You can add a max-width if you don't want it to scale beyond a certain point */
 }
