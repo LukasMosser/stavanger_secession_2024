@@ -53,6 +53,12 @@ hr {
     margin-bottom: 5px;
 }
 
+.top hr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
 .box-top-text hr {
     text-align: center;
     margin-top: 5px;
@@ -179,6 +185,7 @@ hr {
     height: auto;
     display: block; /* Remove extra space beneath the image */
     /* You can add a max-width if you don't want it to scale beyond a certain point */
+    padding-top: 12px;
     padding-bottom: 12px;
 }
 
