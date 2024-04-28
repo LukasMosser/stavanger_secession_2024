@@ -126,20 +126,73 @@ hr {
     gap: 10px; /* Adds space between links, adjust as needed */
 }
 
-.logo-placeholder {
+.logo-placeholder-mobile {
     width: 100%; /* Ensures the placeholder takes up the correct width within the container */
     height: auto; /* Keeps aspect ratio of the content */
     background-color: transparent; /* Placeholder color, change as needed */
     /* Adjust if you need a specific alignment or styling for the logo content */
 }
 
-.logo-placeholder img {
+.logo-placeholder-mobile img {
     width: 100%; /* Makes the image fully occupy the width */
     height: 100%; /* Makes the image fully occupy the height */
     object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
     display: block;
     background-color: transparent;
 }
+
+.logo-placeholder-mobile-opdahl {
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: 100px; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+}
+
+.logo-placeholder-mobile-opdahl img {
+    width: 100%; /* Makes the image fully occupy the width */
+    height: 100%; /* Makes the image fully occupy the height */
+    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+.logo-placeholder-mobile-tou {
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: auto; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo-placeholder-mobile-tou img {
+    width: 50%; /* Makes the image fully occupy the width */
+    height: 50%; /* Makes the image fully occupy the height */
+    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+.logo-placeholder-mobile-thor {
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: auto; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.logo-placeholder-mobile-thor img {
+    width: 50%; /* Makes the image fully occupy the width */
+    height: 50%; /* Makes the image fully occupy the height */
+    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+
 
 .box-content-about {
 

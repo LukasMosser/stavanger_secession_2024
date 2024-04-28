@@ -155,7 +155,7 @@ hr {
 }
 
 .box-left-top {
-    height: 950px; /* Fixed height for the top box */
+    height: 1025px; /* Fixed height for the top box */
     /* Ensure content does not overflow */
     overflow: auto;
 }
@@ -207,6 +207,32 @@ hr {
     flex-wrap: wrap; /* Allows items to wrap to the next line as needed */
 }
 
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* creates two columns */
+    grid-gap: 10px; /* space between logos */
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center; /* centers the image horizontally */
+    align-items: center; /* centers the image vertically */
+    height: 100px; /* specify a height for each logo container */
+}
+
+.logo-item img {
+    max-width: 100%; /* makes sure the image does not exceed the container width */
+    max-height: 100%; /* makes sure the image does not exceed the container height */
+}
+
+.logo-large {
+    height: 150px; /* increased height for larger logos */
+}
+
+.logo-large img {
+    max-height: 100%; /* ensures the image respects the container's height */
+}
+
 .logo-placeholder {
     max-width: 413px; /* Maximum width for each logo */
     max-height: 109px; /* Maximum height for each logo */
@@ -223,6 +249,43 @@ hr {
     display: block;
     background-color: transparent;
 }
+
+
+.logo-placeholder-desktop-council {
+    max-width: 300px; /* Maximum width for each logo */
+    max-height: 100px; /* Maximum height for each logo */
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: auto; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+}
+
+.logo-placeholder-desktop-council img {
+    width: 100%; /* Makes the image fully occupy the width */
+    height: 100%; /* Makes the image fully occupy the height */
+    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+.logo-placeholder-desktop-opdahl {
+    max-width: 300px; /* Maximum width for each logo */
+    max-height: 100px; /* Maximum height for each logo */
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: auto; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+}
+
+.logo-placeholder-desktop-opdahl img {
+    width: 100%; /* Makes the image fully occupy the width */
+    height: 100%; /* Makes the image fully occupy the height */
+    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+
 
 .logo-placeholder-2 {
     max-width: 413px; /* Maximum width for each logo */
