@@ -155,7 +155,7 @@ hr {
 }
 
 .box-left-top {
-    height: 1025px; /* Fixed height for the top box */
+    height: 1100px; /* Fixed height for the top box */
     /* Ensure content does not overflow */
     overflow: auto;
 }
