@@ -32,7 +32,7 @@ hr {
 
 .centered-box {
     width: 1440px;
-    height: 1950px;
+    height: 2200px;
     background-color: #A3A69B;
     margin: 0 auto;
     display: flex;
@@ -136,7 +136,7 @@ hr {
 }
 
 .box-left {
-    width: 600px; /* Fixed width for the left box */
+    width: 700px; /* Fixed width for the left box */
     background-color: #A3A69B; /* Color for visibility */
     margin-right: 25px; /* Adds space between box-left and box-right */
 }
@@ -155,7 +155,7 @@ hr {
 }
 
 .box-left-top {
-    height: 1170px; /* Fixed height for the top box */
+    height: 1150px; /* Fixed height for the top box */
     /* Ensure content does not overflow */
     overflow: auto;
 }
@@ -175,21 +175,42 @@ hr {
 
 .event-row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px; /* Vertical spacing between rows */
 }
 
-.event-title {
-    margin-right: 150px; /* Space between event title and name of institution */
+.event-date {
+    width: 150px; /* Fixed width for date */
 }
 
 .institution-name {
-    flex-grow: 1; /* Allows this element to take up any remaining space, pushing the date/time to the right */
+    width: 300px; /* Fixed width for institution name */
+    font-weight: bold;
 }
 
-.event-date {
-    /* This will be right-aligned due to the flex-grow on the institution-name */
+.event-title {
+    flex-grow: 1; /* Take remaining space */
+}
+
+.event-time {
+    width: 100px; /* Fixed width for time */
+}
+
+.full-width {
+    justify-content: center; /* Center the content horizontally */
+    margin-bottom: 30px; /* Vertical spacing between rows */
+}
+
+.event-row.announcement-row {
+    display: flex; /* Use flexbox for this row */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-bottom: 30px; /* Vertical spacing between rows */
+}
+
+.announcement {
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
 }
 
 #temperature, #stavangerTime {
