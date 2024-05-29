@@ -106,7 +106,6 @@ hr {
     height: auto; /* Maintains the aspect ratio of the image */
     display: block;
 }
-
 .box-content {
     background-color: #A3A69B;
     margin-top: 37px;
@@ -136,14 +135,14 @@ hr {
 .logo-placeholder-mobile img {
     width: 100%; /* Makes the image fully occupy the width */
     height: 100%; /* Makes the image fully occupy the height */
-    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
     display: block;
     background-color: transparent;
 }
 
 .logo-placeholder-mobile-opdahl {
     width: 100%; /* Ensures the placeholder takes up the correct width within the container */
-    height: 100px; /* Keeps aspect ratio of the content */
+    height: 500px; /* Keeps aspect ratio of the content */
     background-color: transparent; /* Placeholder color, change as needed */
     /* Adjust if you need a specific alignment or styling for the logo content */
 }
@@ -151,7 +150,7 @@ hr {
 .logo-placeholder-mobile-opdahl img {
     width: 100%; /* Makes the image fully occupy the width */
     height: 100%; /* Makes the image fully occupy the height */
-    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
     display: block;
     background-color: transparent;
 }
@@ -169,7 +168,7 @@ hr {
 .logo-placeholder-mobile-tou img {
     width: 50%; /* Makes the image fully occupy the width */
     height: 50%; /* Makes the image fully occupy the height */
-    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
     display: block;
     background-color: transparent;
 }
@@ -187,7 +186,7 @@ hr {
 .logo-placeholder-mobile-thor img {
     width: 50%; /* Makes the image fully occupy the width */
     height: 50%; /* Makes the image fully occupy the height */
-    object-fit: cover; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
     display: block;
     background-color: transparent;
 }
