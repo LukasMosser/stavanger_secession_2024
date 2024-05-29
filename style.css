@@ -301,3 +301,7 @@ hr {
     display: block; /* Remove extra space beneath the image */
     /* You can add a max-width if you don't want it to scale beyond a certain point */
 }
+
+.event-row a:link { 
+    text-decoration: none; 
+  } 

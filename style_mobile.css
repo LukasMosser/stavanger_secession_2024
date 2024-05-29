@@ -118,6 +118,13 @@ hr {
     overflow: auto;
 }
 
+.event-row a:link { 
+    text-decoration: none; 
+  } 
+
+.event-title a:link { 
+    text-decoration: none; 
+  } 
 /* Styles for the link container */
 .link-container {
     display: flex; /* Aligns links horizontally */
