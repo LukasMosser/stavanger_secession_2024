@@ -154,6 +154,10 @@ hr {
     /* Adjust if you need a specific alignment or styling for the logo content */
 }
 
+.logo-placeholder-mobile-council img {
+    margin-top: 20px;
+}
+
 .logo-placeholder-mobile-opdahl img {
     width: 100%; /* Makes the image fully occupy the width */
     height: 100%; /* Makes the image fully occupy the height */
