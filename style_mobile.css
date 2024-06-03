@@ -155,7 +155,11 @@ hr {
 }
 
 .logo-placeholder-mobile-council img {
-    margin-top: 20px;
+    width: 100%; /* Makes the image fully occupy the width */
+    height: 100%; /* Makes the image fully occupy the height */
+    object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
 }
 
 .logo-placeholder-mobile-opdahl img {
