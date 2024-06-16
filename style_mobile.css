@@ -137,9 +137,28 @@ hr {
     height: auto; /* Keeps aspect ratio of the content */
     background-color: transparent; /* Placeholder color, change as needed */
     /* Adjust if you need a specific alignment or styling for the logo content */
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+.logo-placeholder-mobile-no-margin {
+    width: 100%; /* Ensures the placeholder takes up the correct width within the container */
+    height: auto; /* Keeps aspect ratio of the content */
+    background-color: transparent; /* Placeholder color, change as needed */
+    /* Adjust if you need a specific alignment or styling for the logo content */
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .logo-placeholder-mobile img {
+    width: 100%; /* Makes the image fully occupy the width */
+    height: 100%; /* Makes the image fully occupy the height */
+    object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
+    display: block;
+    background-color: transparent;
+}
+
+.logo-placeholder-mobile-no-margin img {
     width: 100%; /* Makes the image fully occupy the width */
     height: 100%; /* Makes the image fully occupy the height */
     object-fit: contain; /* Ensures the image covers the placeholder, may clip if aspect ratio differs */
@@ -152,6 +171,8 @@ hr {
     height: 500px; /* Keeps aspect ratio of the content */
     background-color: transparent; /* Placeholder color, change as needed */
     /* Adjust if you need a specific alignment or styling for the logo content */
+    margin-bottom: -100px;
+    margin-top: -100px;
 }
 
 .logo-placeholder-mobile-council img {
@@ -177,7 +198,8 @@ hr {
     /* Adjust if you need a specific alignment or styling for the logo content */
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 100px;
 }
 
 .logo-placeholder-mobile-tou img {
@@ -195,7 +217,8 @@ hr {
     /* Adjust if you need a specific alignment or styling for the logo content */
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-top: 5px;
+    margin-bottom: 100px;
 }
 
 .logo-placeholder-mobile-thor img {
