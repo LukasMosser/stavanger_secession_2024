@@ -32,7 +32,7 @@ hr {
 
 .centered-box {
     width: 1440px;
-    height: 2200px;
+    height: 2500px;
     background-color: #A3A69B;
     margin: 0 auto;
     display: flex;
@@ -53,7 +53,7 @@ hr {
     height: 530px;
     background-color: #A3A69B;
     margin-bottom: 150px; /* Ensures fixed spacing below box-one */
-    width: 1387px; /* Explicit width */
+    width: 1450px; /* Explicit width */
     margin-left: auto; /* Center within centered-box */
     margin-right: auto; /* Center within centered-box */
     display: flex; /* Enables flexbox layout within box-one */
@@ -244,8 +244,8 @@ hr {
 }
 
 .logo-item img {
-    max-width: 100%; /* Makes sure the image does not exceed the container width */
-    max-height: 100%; /* Makes sure the image does not exceed the container height */
+    max-width: 80%; /* Makes sure the image does not exceed the container width */
+    max-height: 80%; /* Makes sure the image does not exceed the container height */
 }
 
 .logo-large {
@@ -253,6 +253,14 @@ hr {
 }
 
 .logo-large img {
+    max-height: 100%; /* Ensures the image respects the container's height */
+}
+
+.logo-small {
+    height: 150px; /* Increased height for larger logos */
+}
+
+.logo-small img {
     max-height: 100%; /* Ensures the image respects the container's height */
 }
 
